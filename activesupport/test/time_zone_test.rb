@@ -8,6 +8,10 @@ require "yaml"
 class TimeZoneTest < ActiveSupport::TestCase
   include TimeZoneTestHelpers
 
+  def test_inserted_by_llm
+    assert_equal 1, 1
+  end
+
   def test_utc_to_local
     zone = ActiveSupport::TimeZone["Eastern Time (US & Canada)"]
 
